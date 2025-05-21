@@ -1,0 +1,253 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #6aa84f;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    max-width: 80px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+nav {
+    background-color: #8B4513;
+    padding: 0.8rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav a {
+    color: #F5F5DC;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    background-color: #6aa84f;
+    transform: translateY(-2px);
+    color: white;
+}
+
+main {
+    padding: 2rem;
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1, h2 {
+    color: #8B4513;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    border-bottom: 2px solid #6aa84f;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+a {
+    color: #6aa84f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8B4513;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+ul li:before {
+    color: #6aa84f;
+    position: absolute;
+    left: 0;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.01);
+}
+
+footer {
+    background-color: #8B4513;
+    color: #F5F5DC;
+    padding: 2rem;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.footer-section:hover {
+    transform: translateY(-5px);
+}
+
+.footer-section h3 {
+    color: #F5F5DC;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Estilos para la paleta de colores */
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+.color-box {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.color-box:hover {
+    transform: scale(1.05);
+}
+
+.color-box.verde-hoja {
+    background-color: #6aa84f;
+}
+
+.color-box.marron-tierra {
+    background-color: #8B4513;
+}
+
+.color-box.beige {
+    background-color: #F5F5DC;
+    color: #333;
+}
+
+.color-box.blanco {
+    background-color: #FFFFFF;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+/* Estilos para las secciones */
+section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para enlaces de portafolio */
+.portfolio-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #6aa84f;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.portfolio-link:hover {
+    background-color: #8B4513;
+    transform: translateY(-2px);
+    color: white;
+}
+  
