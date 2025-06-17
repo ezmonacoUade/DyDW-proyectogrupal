@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Grupo 9</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="../../css/contacto.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <img src="../../assets/img/logoferia.png" alt="Logo Grupo 9" class="logo">
+    <h1>Grupo N°9 - Diseño y Desarrollo Web</h1>
+    <p class="subtitle">Universidad Argentina de la Empresa</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../../index.html" aria-label="Página principal del grupo">Inicio</a></li>
+      <li><a href="../proyecto/index.html" aria-label="Ver proyecto de la feria sustentable">Proyecto</a></li>
+      <li><a href="../avances/index.html" aria-label="Ver avances del proyecto">Avances</a></li>
+      <li><a href="../contacto/index.html" aria-label="Información de contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Contacto del Equipo</h2>
+      <p>¿Tienes alguna pregunta sobre nuestro proyecto o quieres contactar con el equipo de desarrollo?</p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin: 2rem 0;">
+        <div>
+          <h3>Información de Contacto Académico</h3>
+          <div style="background-color: #f9f9f9; padding: 2rem; border-radius: 8px; border-left: 4px solid #6aa84f;">
+            <div style="margin-bottom: 1.5rem;">
+              <h4>Materia</h4>
+              <p>Diseño y Desarrollo Web</p>
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <h4>Universidad</h4>
+              <p>Universidad Argentina de la Empresa (UADE)</p>
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <h4>Grupo</h4>
+              <p>Grupo N°9</p>
+            </div>
+            
+            <div>
+              <h4>Proyecto</h4>
+              <p>Sitio Web - Feria Sustentable Itinerante</p>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h3>Envíanos un Mensaje</h3>
+          <form id="contactForm" style="background-color: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" required 
+                     placeholder="Tu nombre completo">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required 
+                     placeholder="tu.email@ejemplo.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="asunto">Asunto *</label>
+              <select id="asunto" name="asunto" required style="padding: 0.75rem; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem; width: 100%;">
+                <option value="">Selecciona un asunto</option>
+                <option value="consulta-proyecto">Consulta sobre el Proyecto</option>
+                <option value="colaboracion">Colaboración Académica</option>
+                <option value="feedback">Feedback del Sitio</option>
+                <option value="tecnico">Consulta Técnica</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" required rows="5" 
+                        placeholder="Escribe tu mensaje aquí..."
+                        style="padding: 0.75rem; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem; width: 100%; resize: vertical; font-family: 'Poppins', sans-serif;"></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn" style="width: 100%;">
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <h2>Integrantes del Equipo</h2>
+      <div class="integrantes-grid">
+        <div class="integrante-card">
+          <h3>Devita Martin Jose</h3>
+          <p class="rol">UX/UI Designer</p>
+          <p class="descripcion">Responsable del diseño visual y experiencia de usuario.</p>
+          <a href="https://tinchodevita.github.io/Desarrollo-Web-UVA1-Actividad-Obligatoria1/" 
+             class="portfolio-link" target="_blank" rel="noopener noreferrer">
+            Contactar via Portafolio
+          </a>
+        </div>
+
+        <div class="integrante-card">
+          <h3>Monaco Ezequiel</h3>
+          <p class="rol">Maquetador Web</p>
+          <p class="descripcion">Encargado de la estructura HTML y estilos CSS.</p>
+          <a href="https://ezmonacouade.github.io/DyDW-portfolioUVA2/" 
+             class="portfolio-link" target="_blank" rel="noopener noreferrer">
+            Contactar via Portafolio
+          </a>
+        </div>
+
+        <div class="integrante-card">
+          <h3>Vega Lucas</h3>
+          <p class="rol">Programador</p>
+          <p class="descripcion">Desarrollador de funcionalidades JavaScript.</p>
+          <a href="https://lucasvegalv.github.io/ejercicioparcial-uade/index.html" 
+             class="portfolio-link" target="_blank" rel="noopener noreferrer">
+            Contactar via Portafolio
+          </a>
+        </div>
+
+        <div class="integrante-card">
+          <h3>Villarreal Lucas Nehuen</h3>
+          <p class="rol">Comunicador Web</p>
+          <p class="descripcion">Responsable del contenido y estrategia comunicacional.</p>
+          <a href="https://lvillarreal-uade.github.io/DyD-UVA2-Integrador/index.html" 
+             class="portfolio-link" target="_blank" rel="noopener noreferrer">
+            Contactar via Portafolio
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Preguntas Frecuentes</h2>
+      <p>Encuentra respuestas a las consultas más comunes sobre nuestro proyecto.</p>
+      
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>¿Cómo puedo colaborar con el proyecto?</h4>
+          <p>Puedes contactarnos a través del formulario de arriba o visitando nuestros portafolios individuales para conocer más sobre cada integrante del equipo.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h4>¿El sitio web está optimizado para móviles?</h4>
+          <p>Sí, el sitio web fue desarrollado con diseño responsivo, garantizando una experiencia óptima en dispositivos móviles, tablets y desktop.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h4>¿Qué tecnologías utilizaron?</h4>
+          <p>Utilizamos HTML5 semántico, CSS3 con Grid y Flexbox, JavaScript vanilla, y Figma para el diseño UI/UX. Todo desarrollado siguiendo las mejores prácticas de desarrollo web.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h4>¿Puedo usar este proyecto como referencia?</h4>
+          <p>Este es un proyecto académico desarrollado para la materia Diseño y Desarrollo Web de UADE. Si deseas usarlo como referencia, por favor menciona la fuente.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h4>¿El proyecto incluye funcionalidades backend?</h4>
+          <p>Este proyecto se enfoca en el frontend. Las funcionalidades como formularios y chat son simuladas con JavaScript para fines demostrativos.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h4>¿Cómo fue la organización del equipo?</h4>
+          <p>Cada integrante se especializó en un área: UX/UI Design, Maquetado Web, Programación Frontend y Comunicación Digital, trabajando colaborativamente en todas las etapas.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h4>¿El sitio es accesible?</h4>
+          <p>Sí, implementamos etiquetas semánticas, atributos ARIA, navegación por teclado y contrastes adecuados siguiendo las pautas WCAG.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h4>¿Puedo ver el código fuente?</h4>
+          <p>El proyecto está disponible públicamente. Puedes revisar el código y la documentación técnica en la sección de avances del proyecto.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Integrantes del Grupo</h3>
+        <p>Devita Martin Jose</p>
+        <p>Monaco Ezequiel</p>
+        <p>Vega Lucas</p>
+        <p>Villarreal Lucas Nehuen</p>
+      </div>
+      <div class="footer-section">
+        <h3>Información Académica</h3>
+        <p><a href="../../index.html" style="color: #F5F5DC;">Sitio del Grupo</a></p>
+        <p>Trabajo grupal - Materia Diseño y Desarrollo Web</p>
+        <p>Grupo N°9</p>
+        <img src="../../assets/img/logoferia.png" alt="Logo UADE" style="max-width: 60px; margin-top: 1rem;">
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html> 
