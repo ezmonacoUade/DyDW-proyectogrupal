@@ -2,52 +2,136 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Grupo 8 - Feria Sustentable</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Grupo 9 - Diseño y Desarrollo Web</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/home.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio del Grupo 9 - Diseño y Desarrollo Web - UADE">
 </head>
 <body>
   <header>
-    <img src="assets/img/logoferia.png" alt="Logo Feria Sustentable" class="logo">
-    <h1>Feria Sustentable Itinerante</h1>
+    <img src="assets/img/logoferia.png" alt="Logo Grupo 9" class="logo">
+    <h1>Grupo N°9 - Diseño y Desarrollo Web</h1>
+    <p class="subtitle">Universidad Argentina de la Empresa</p>
   </header>
   
   <nav>
     <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="proyecto.html">Proyecto</a></li>
-      <li><a href="avances.html">Avances</a></li>
+      <li><a href="index.html" aria-label="Página principal del grupo">Inicio</a></li>
+      <li><a href="pages/proyecto/index.html" aria-label="Ver proyecto de la feria sustentable">Proyecto</a></li>
+      <li><a href="pages/avances/index.html" aria-label="Ver avances del proyecto">Avances</a></li>
+      <li><a href="pages/contacto/index.html" aria-label="Información de contacto">Contacto</a></li>
     </ul>
   </nav>
 
   <main>
-    <img src="assets/img/feriasustentable2.jpg" alt="Feria Sustentable" class="hero-image">
-    
-    <section>
-      <h2>GRUPO N°9 ~ Inetegrantes</h2>
-      <ul>
-        <li>Devita Martin Jose – <a href="https://tinchodevita.github.io/Desarrollo-Web-UVA1-Actividad-Obligatoria1/" class="portfolio-link">Ver Portafolio</a></li>
-        <li>Monaco Ezequiel – <a href="https://ezmonacouade.github.io/DyDW-portfolioUVA2/" class="portfolio-link">Ver Portafolio</a></li>
-        <li>Vega Lucas – <a href="https://lucasvegalv.github.io/ejercicioparcial-uade/index.html" class="portfolio-link">Ver Portafolio</a></li>
-        <li>Villarreal Lucas Nehuen – <a href="https://lvillarreal-uade.github.io/DyD-UVA2-Integrador/index.html" class="portfolio-link">Ver Portafolio</a></li>
-      </ul>
+    <section class="hero-section">
+      <div class="hero-logo">
+        <img src="assets/img/logoferia.png" alt="Logo del Grupo" class="hero-image">
+      </div>
+      
+      <div class="hero-content">
+        <h2>Bienvenidos al Sitio del Grupo N°9</h2>
+        <p class="mission-text">
+          Somos estudiantes de la materia Diseño y Desarrollo Web de la Universidad Argentina de la Empresa (UADE). 
+          Nuestro proyecto grupal consiste en desarrollar un sitio web completo para una organización que promueve 
+          la sustentabilidad a través de una feria itinerante.
+        </p>
+      </div>
+    </section>
+
+    <section id="integrantes" class="integrantes-section">
+      <h2>Integrantes del Grupo N°9</h2>
+      <p>Conoce a los miembros de nuestro equipo y sus portafolios individuales:</p>
+      
+      <div class="integrantes-grid">
+        <div class="integrante-card">
+          <h3>Devita Martin Jose</h3>
+          <p class="rol">UX/UI Designer</p>
+          <p class="descripcion">Responsable del diseño visual, wireframes y experiencia de usuario del proyecto.</p>
+          <a href="https://tinchodevita.github.io/Desarrollo-Web-UVA1-Actividad-Obligatoria1/" 
+             class="portfolio-link" target="_blank" rel="noopener noreferrer">
+            Ver Portafolio Individual
+          </a>
+        </div>
+
+        <div class="integrante-card">
+          <h3>Monaco Ezequiel</h3>
+          <p class="rol">Maquetador Web</p>
+          <p class="descripcion">Encargado de la estructura HTML y la implementación de estilos CSS del sitio.</p>
+          <a href="https://ezmonacouade.github.io/DyDW-portfolioUVA2/" 
+             class="portfolio-link" target="_blank" rel="noopener noreferrer">
+            Ver Portafolio Individual
+          </a>
+        </div>
+
+        <div class="integrante-card">
+          <h3>Vega Lucas</h3>
+          <p class="rol">Programador</p>
+          <p class="descripcion">Desarrollador de funcionalidades JavaScript, interacciones y validaciones.</p>
+          <a href="https://lucasvegalv.github.io/ejercicioparcial-uade/index.html" 
+             class="portfolio-link" target="_blank" rel="noopener noreferrer">
+            Ver Portafolio Individual
+          </a>
+        </div>
+
+        <div class="integrante-card">
+          <h3>Villarreal Lucas Nehuen</h3>
+          <p class="rol">Comunicador Web</p>
+          <p class="descripcion">Responsable del contenido textual, redacción y estrategia comunicacional.</p>
+          <a href="https://lvillarreal-uade.github.io/DyD-UVA2-Integrador/index.html" 
+             class="portfolio-link" target="_blank" rel="noopener noreferrer">
+            Ver Portafolio Individual
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyecto-info" class="proyecto-section">
+      <h2>Información del Proyecto</h2>
+      <div class="proyecto-content">
+        <div class="proyecto-item">
+          <h3>Caso Asignado</h3>
+          <p>Desarrollo de sitio web para una organización que promueve la sustentabilidad mediante una feria itinerante que recorre diferentes ciudades de la Provincia de Buenos Aires.</p>
+        </div>
+
+        <div class="proyecto-item">
+          <h3>Objetivo Principal</h3>
+          <p>Crear una plataforma web que informe, conecte y facilite la participación de visitantes y expositores en ferias sustentables.</p>
+        </div>
+
+        <div class="proyecto-item">
+          <h3>Tecnologías Utilizadas</h3>
+          <ul class="tech-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Diseño UI/UX en figma</li>
+          </ul>
+        </div>
     </section>
   </main>
 
   <footer>
     <div class="footer-content">
       <div class="footer-section">
-        <h3>Contacto</h3>
-        <p>Email: info@feriasustentable.com</p>
-        <p>Tel: (123) 456-7890</p>
+        <h3>Integrantes del Grupo</h3>
+        <p>Devita Martin Jose</p>
+        <p>Monaco Ezequiel</p>
+        <p>Vega Lucas</p>
+        <p>Villarreal Lucas Nehuen</p>
       </div>
       <div class="footer-section">
-        <h3>Ubicación</h3>
-        <p>Provincia de Buenos Aires</p>
-        <p>Argentina</p>
+        <h3>Información Académica</h3>
+        <p><a href="index.html" style="color: #F5F5DC;">Sitio del Grupo</a></p>
+        <p>Trabajo grupal - Materia Diseño y Desarrollo Web</p>
+        <p>Grupo N°9</p>
+        <img src="assets/img/logoferia.png" alt="Logo UADE" style="max-width: 60px; margin-top: 1rem;">
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
