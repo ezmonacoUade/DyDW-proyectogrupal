@@ -125,41 +125,47 @@
 /* Stands y productos */
 .stands-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
   margin: 2rem 0;
 }
 
 .stand-category {
   background-color: var(--color-white);
-  padding: 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
+  overflow: hidden;
   transition: var(--transition);
-  border: 1px solid #eee;
 }
 
 .stand-category:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.stand-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
 }
 
 .stand-category h3 {
   color: var(--color-secondary);
-  margin-bottom: 1rem;
+  margin: 1.5rem 1.5rem 0.5rem 1.5rem;
   font-size: 1.4rem;
 }
 
 .category-description {
   color: #666;
-  margin-bottom: 1.5rem;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
   font-style: italic;
 }
 
 .product-list {
   list-style: none;
-  padding: 0;
-  margin: 1.5rem 0;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .product-list li {
@@ -180,14 +186,13 @@
 }
 
 .exhibitor-info {
-  background-color: #f0f5eb;
-  padding: 1rem;
-  border-radius: 6px;
-  margin-top: 1.5rem;
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-top: 1px solid #eee;
 }
 
 .exhibitor-info h4 {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   margin-bottom: 0.5rem;
   font-size: 1rem;
 }
