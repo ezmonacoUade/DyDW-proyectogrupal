@@ -28,9 +28,11 @@
   </nav>
 
   <main>
-    <section class="hero-section">
-      <h2>Reserva tu Lugar en la Feria Sustentable</h2>
-      <p>Adquiere tickets para visitar la feria y reserva tu lugar en nuestros talleres y actividades especiales.</p>
+    <section class="hero-section ticket-hero">
+      <div class="hero-content">
+        <h2>Reserva tu Lugar en la Feria Sustentable</h2>
+        <p>Adquiere tickets para visitar la feria y reserva tu lugar en nuestros talleres y actividades especiales.</p>
+      </div>
     </section>
 
     <section class="tickets-section">
@@ -79,47 +81,59 @@
       <h2>Talleres y Actividades</h2>
       <div class="workshops-grid">
         <div class="workshop-card">
-          <h3>Taller de Compostaje Casero</h3>
-          <p class="workshop-description">Aprende a crear tu propio compost en casa con técnicas simples y efectivas.</p>
-          <div class="workshop-details">
-            <p><strong>Duración:</strong> 2 horas</p>
-            <p><strong>Precio:</strong> $300</p>
-            <p><strong>Materiales:</strong> Incluidos</p>
+          <img src="../../assets/img/sustentabilidad07.jpeg" alt="Taller de Compostaje" class="workshop-image">
+          <div class="workshop-card-content">
+            <h3>Taller de Compostaje Casero</h3>
+            <p class="workshop-description">Aprende a crear tu propio compost en casa con técnicas simples y efectivas.</p>
+            <div class="workshop-details">
+              <p><strong>Duración:</strong> 2 horas</p>
+              <p><strong>Precio:</strong> $300</p>
+              <p><strong>Materiales:</strong> Incluidos</p>
+            </div>
+            <button class="workshop-btn" onclick="addToCart('compostaje', 300)">Reservar Taller</button>
           </div>
-          <button class="workshop-btn" onclick="addToCart('compostaje', 300)">Reservar Taller</button>
         </div>
 
         <div class="workshop-card">
-          <h3>Taller de Huerta Urbana</h3>
-          <p class="workshop-description">Cultiva tus propios alimentos en espacios pequeños con técnicas urbanas.</p>
-          <div class="workshop-details">
-            <p><strong>Duración:</strong> 3 horas</p>
-            <p><strong>Precio:</strong> $400</p>
-            <p><strong>Materiales:</strong> Incluidos</p>
+          <img src="../../assets/img/sustentabilidad05.jpg" alt="Taller de Huerta" class="workshop-image">
+          <div class="workshop-card-content">
+            <h3>Taller de Huerta Urbana</h3>
+            <p class="workshop-description">Cultiva tus propios alimentos en espacios pequeños con técnicas urbanas.</p>
+            <div class="workshop-details">
+              <p><strong>Duración:</strong> 3 horas</p>
+              <p><strong>Precio:</strong> $400</p>
+              <p><strong>Materiales:</strong> Incluidos</p>
+            </div>
+            <button class="workshop-btn" onclick="addToCart('huerta', 400)">Reservar Taller</button>
           </div>
-          <button class="workshop-btn" onclick="addToCart('huerta', 400)">Reservar Taller</button>
         </div>
 
         <div class="workshop-card">
-          <h3>Taller de Reciclaje Creativo</h3>
-          <p class="workshop-description">Transforma materiales reciclados en objetos útiles y decorativos.</p>
-          <div class="workshop-details">
-            <p><strong>Duración:</strong> 2.5 horas</p>
-            <p><strong>Precio:</strong> $350</p>
-            <p><strong>Materiales:</strong> Incluidos</p>
+          <img src="../../assets/img/sustentabilidad02.jpg" alt="Taller de Reciclaje" class="workshop-image">
+          <div class="workshop-card-content">
+            <h3>Taller de Reciclaje Creativo</h3>
+            <p class="workshop-description">Transforma materiales reciclados en objetos útiles y decorativos.</p>
+            <div class="workshop-details">
+              <p><strong>Duración:</strong> 2.5 horas</p>
+              <p><strong>Precio:</strong> $350</p>
+              <p><strong>Materiales:</strong> Incluidos</p>
+            </div>
+            <button class="workshop-btn" onclick="addToCart('reciclaje', 350)">Reservar Taller</button>
           </div>
-          <button class="workshop-btn" onclick="addToCart('reciclaje', 350)">Reservar Taller</button>
         </div>
 
         <div class="workshop-card">
-          <h3>Taller para Niños: Eco-Arte</h3>
-          <p class="workshop-description">Actividades creativas para niños usando materiales naturales y reciclados.</p>
-          <div class="workshop-details">
-            <p><strong>Duración:</strong> 1.5 horas</p>
-            <p><strong>Precio:</strong> $200</p>
-            <p><strong>Materiales:</strong> Incluidos</p>
+          <img src="../../assets/img/sustentabilidad01.jpg" alt="Taller de Eco-Arte" class="workshop-image">
+          <div class="workshop-card-content">
+            <h3>Taller para Niños: Eco-Arte</h3>
+            <p class="workshop-description">Actividades creativas para niños usando materiales naturales y reciclados.</p>
+            <div class="workshop-details">
+              <p><strong>Duración:</strong> 1.5 horas</p>
+              <p><strong>Precio:</strong> $200</p>
+              <p><strong>Materiales:</strong> Incluidos</p>
+            </div>
+            <button class="workshop-btn" onclick="addToCart('eco-arte', 200)">Reservar Taller</button>
           </div>
-          <button class="workshop-btn" onclick="addToCart('eco-arte', 200)">Reservar Taller</button>
         </div>
       </div>
     </section>
